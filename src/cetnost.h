@@ -63,6 +63,6 @@ int *cetnost(char *text);
  * uklid
  * @param value
  */
-void free_all2(struct value **value);
+void free_all2(struct value *value);
 
 #endif //PROGRAMOVANI1_ZAPOCET_CETNOST_H

@@ -58,7 +58,7 @@ int mincovka(unsigned int castka, unsigned int **platidla)
     }
 
     /** ukliad */
-    free_all(&first);
+//    free_all(first);
 
     return sum;
 }
@@ -86,10 +86,13 @@ void coin_create_output(struct coin *output)
     }
 }
 
-void free_all(struct coin **value)
+void free_all(struct coin *value)
 {
-    if ((*value)->next)
-        free_all(&((*value)->next));
+    if (!value)
+        return;
 
-    free(*value);
+    if (value->next)
+        free_all(value->next);
+
+    free(value);
 }

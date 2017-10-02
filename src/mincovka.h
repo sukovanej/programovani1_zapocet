@@ -22,7 +22,7 @@ struct coin
  * uklid
  * @param value
  */
-void free_all(struct coin** value);
+void free_all(struct coin* value);
 
 /**
  * textovy vystup
