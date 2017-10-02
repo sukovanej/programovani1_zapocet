@@ -66,4 +66,12 @@ void tests()
     assert_int(result6[7], 5);
 
     /** /mincovka */
+
+    /** uklid */
+    free(result1);
+    free(result2);
+    free(result3);
+    free(result4);
+    free(result5);
+    free(result6);
 }

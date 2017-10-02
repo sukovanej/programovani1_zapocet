@@ -19,6 +19,12 @@ struct coin
 };
 
 /**
+ * uklid
+ * @param value
+ */
+void free_all(struct coin** value);
+
+/**
  * textovy vystup
  */
 void coin_create_output(struct coin *output);

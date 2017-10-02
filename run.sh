@@ -5,4 +5,4 @@ cmake ../
 make
 ./programovani1_zapocet
 cd ..
-rm -rf __build
+#rm -rf __build
