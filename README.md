@@ -1,5 +1,6 @@
 # spusteni
-```./run.sh
+```
+./run.sh
 ```
 ## nastaveni vystupu
 
