@@ -84,22 +84,5 @@ int *cetnost(char *text)
     if (enable_output)
         create_output(first);
 
-//    free_all2(first);
-//    first = NULL;
-//    actual_value = NULL;
-//    last = NULLo
-    t
-
     return result;
-}
-
-void free_all2(struct value *value)
-{
-    if (!value)
-        return;
-
-    if (value->next)
-        free_all2(value->next);
-
-    free(value);
 }

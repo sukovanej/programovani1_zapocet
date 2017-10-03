@@ -11,18 +11,15 @@
 
 #define enable_output 1
 
+/**
+ * list hodnot a poctu
+ */
 struct coin
 {
     unsigned int value;
     unsigned int count;
     struct coin *next;
 };
-
-/**
- * uklid
- * @param value
- */
-void free_all(struct coin* value);
 
 /**
  * textovy vystup

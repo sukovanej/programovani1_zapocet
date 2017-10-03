@@ -40,7 +40,9 @@ int mincovka(unsigned int castka, unsigned int **platidla)
     }
 
     unsigned int counter = 0;
+
     *platidla = (unsigned int *) malloc(sum * sizeof(unsigned int *));
+
     actual = first;
 
     while (actual) {
@@ -56,9 +58,6 @@ int mincovka(unsigned int castka, unsigned int **platidla)
     if (enable_output) {
         coin_create_output(first);
     }
-
-    /** ukliad */
-//    free_all(first);
 
     return sum;
 }
@@ -84,15 +83,4 @@ void coin_create_output(struct coin *output)
     } else {
         printf("\n");
     }
-}
-
-void free_all(struct coin *value)
-{
-    if (!value)
-        return;
-
-    if (value->next)
-        free_all(value->next);
-
-    free(value);
 }
